@@ -1,0 +1,252 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/jobseek1layoutid"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolcolor"
+        android:id="@+id/jobseekerreg1toolbarid"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:layout_margin="2dp">
+                <EditText
+                    android:id="@+id/jobseekfnameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/innertextview"
+                    android:hint="First Name"
+                    android:scrollbars="horizontal"
+                    android:textColor="@color/innertextview"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:layout_margin="2dp">
+                <EditText
+                    android:id="@+id/jobseekmnameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:backgroundTint="@color/innertextview"
+                    android:gravity="center"
+                    android:hint="Middle"
+                    android:scrollbars="horizontal"
+                    android:textColor="@color/innertextview"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:layout_margin="2dp">
+                <EditText
+                    android:id="@+id/jobseeklnameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/innertextview"
+                    android:hint="Last Name"
+                    android:scrollbars="horizontal"
+                    android:textColor="@color/innertextview"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+                <EditText
+                    android:id="@+id/jobseekfatherfnameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/innertextview"
+                    android:hint="Father's Name "
+                    android:scrollbars="horizontal"
+                    android:textColor="@color/innertextview"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D.O.B :"
+                    android:textColor="@color/innertextview"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txtdateid"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/innertextview"
+                    android:gravity="center"
+                    android:hint="MM-DD-YYYY"
+                    android:textColor="@color/innertextview"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:textSize="20sp" />
+                <ImageButton
+                    android:id="@+id/imgcalenderid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/calendaricon" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/toolcolor">
+                <TextView
+                    android:id="@+id/genderspintxtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/innertextview"
+                    android:text="Gender :"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:textSize="20sp" />
+                <Spinner
+                    android:id="@+id/jobseek1genderspinnerid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/genderspintxtid"
+                    android:backgroundTint="@color/white"
+                    android:scrollbarSize="20dp"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@color/toolcolor"
+                    android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/toolcolor">
+                <TextView
+                    android:id="@+id/maritalspntxtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/innertextview"
+                    android:text="Marital Status :"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:textSize="20sp" />
+                <Spinner
+                    android:id="@+id/jobseek1maritalspinnerid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/maritalspntxtid"
+                    android:backgroundTint="@color/white"
+                    android:scrollbarSize="20dp"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/spouselayoutid"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+            <EditText
+                android:id="@+id/jobseekemailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/innertextview"
+                android:backgroundTint="@color/innertextview"
+                android:hint="Email id"
+                android:scrollbars="horizontal"
+                android:textCursorDrawable="@color/innertextview"
+                android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+            <EditText
+                android:id="@+id/jobseekmobileid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/innertextview"
+                android:backgroundTint="@color/innertextview"
+                android:hint="Mobile Number"
+                android:scrollbars="horizontal"
+                android:inputType="number"
+                android:textCursorDrawable="@color/innertextview" />
+            </android.support.design.widget.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/toolcolor">
+                <TextView
+                    android:id="@+id/categoryspintxtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Category :"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                <Spinner
+                    android:id="@+id/jobseek1spinnerid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/categoryspintxtid"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@color/innertextview"
+                    android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbtndsgn"
+            android:text="Next"
+            android:textSize="25sp"
+            android:id="@+id/submitregister1id"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

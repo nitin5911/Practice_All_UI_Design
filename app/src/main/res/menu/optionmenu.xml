@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="About Us" android:id="@+id/menuaboutusid"></item>
+    <item android:title="Terms and Conditions" android:id="@+id/menutermsid"></item>
+    <item android:title="Change Password" android:id="@+id/menuchnagepassid"></item>
+    <item android:title="Logout" android:id="@+id/menulogoutid" ></item>
+
+</menu>

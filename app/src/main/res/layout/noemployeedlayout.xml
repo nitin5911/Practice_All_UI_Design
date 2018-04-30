@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/noemplydlaytxtvwid"
+        android:textColorHint="@color/innertextview"
+        android:textColor="@color/innertextview"
+        android:text="Is anyone Employed in the Family"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/noemplydradiogrpid"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:hint="Yes"
+            android:buttonTint="@color/innertextview"
+            android:id="@+id/noemplydyesradiobtnid"
+            android:textColorHint="@color/innertextview"
+            android:textSize="20sp" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:hint="No"
+            android:buttonTint="@color/innertextview"
+            android:id="@+id/noemplydnoradiobtnid"
+            android:textColorHint="@color/innertextview"
+            android:textSize="20sp" />
+    </RadioGroup>
+</LinearLayout>

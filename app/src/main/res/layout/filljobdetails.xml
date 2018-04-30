@@ -1,0 +1,36 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:focusableInTouchMode="true"
+    android:id="@+id/filljobdetaillayoutid"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:scrollbars="horizontal"
+        android:id="@+id/spinjobtitleid"
+        android:textColorHint="@color/innertextview"
+        android:textColor="@color/innertextview"
+        android:hint="Last/Current Job Title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:scrollbars="horizontal"
+        android:textColorHint="@color/innertextview"
+        android:textColor="@color/innertextview"
+        android:inputType="number"
+        android:id="@+id/spinjobsalaryid"
+        android:hint="Last/Current Job Salary"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:scrollbars="horizontal"
+        android:id="@+id/spinjobemployerid"
+        android:textColorHint="@color/innertextview"
+        android:textColor="@color/innertextview"
+        android:hint="Last/Current Job Employer"/>
+</LinearLayout>

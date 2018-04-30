@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"/>
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/jbskrmapViewid"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/seekbartextid"
+        android:text="0"
+        android:textColor="#000" />
+    <SeekBar
+        android:id="@+id/seekbarid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:progressDrawable="@drawable/seekbar_drawable_progress"
+        android:thumb="@drawable/seekbar_drawable_thumb"
+        android:max="100"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtndsgn"
+        android:text="Update"
+        android:textSize="25sp"
+        android:id="@+id/jbskrmapupdtbtnid"
+        android:textColor="@color/white"/>
+</LinearLayout>

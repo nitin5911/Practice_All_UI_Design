@@ -1,0 +1,97 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/jobseekcardmainid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardcolor"
+
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:id="@+id/jscomplogoid"
+        android:layout_margin="10dp"
+        android:background="@drawable/jobseeker"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textColorHint="@color/innertextview"
+        android:id="@+id/jscompanynameid"
+        android:textColor="@color/innertextview"
+        android:hint="company name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/jsjobTypeid"
+            android:textColorHint="@color/innertextview"
+            android:layout_margin="5dp"
+            android:textColor="@color/innertextview"
+            android:hint="Job type"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColorHint="@color/innertextview"
+            android:id="@+id/jsJobTitleid"
+            android:layout_margin="5dp"
+            android:textColor="@color/innertextview"
+            android:hint="Job title"/>
+    </LinearLayout>
+</LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColorHint="@color/innertextview"
+                android:id="@+id/jsqualificationid"
+                android:layout_margin="5dp"
+                android:textColor="@color/innertextview"
+                android:hint="Qualfication"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/jsjobctcid"
+                android:textColorHint="@color/innertextview"
+                android:layout_margin="5dp"
+                android:textColor="@color/innertextview"
+                android:hint="CTC"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/jscompaddrsid"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/innertextview"
+                android:textColor="@color/innertextview"
+                android:hint="Address"/>
+</LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

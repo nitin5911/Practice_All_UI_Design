@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:id="@+id/mainloginlayoutid"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/whitetheme"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/containerid"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/img"
+                android:background="@drawable/ggr" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/login_unameid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/innertextview"
+                android:layout_margin="5dp"
+                android:maxLength="25"
+                android:textCursorDrawable="@color/innertextview"
+                android:backgroundTint="@color/innertextview"
+                android:textColorHint="@color/innertextview"
+                android:hint="Username"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tint"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/innertextview"
+            android:backgroundTint="@color/innertextview"
+            android:textCursorDrawable="@color/innertextview"
+            >
+
+        <EditText
+            android:id="@+id/login_upassid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/innertextview"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/innertextview"
+            android:textColorHint="@color/innertextview"
+            android:textCursorDrawable="@color/innertextview" />
+        </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/forgetpassid"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/innertextview"
+                android:layout_height="wrap_content"
+                android:text="Forget Password ?"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_margin="30dp"
+                android:id="@+id/loginbtn"
+                android:background="@drawable/roundbtndsgn"
+                android:text="login"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/innertextview"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="Dont Have an Account !"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:id="@+id/signupid"
+            android:textSize="15sp"
+            android:text="SignUp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

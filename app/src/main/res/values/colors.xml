@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#634f9e</color>
+    <color name="colorPrimaryDark">#634f9e</color>
+    <color name="colorAccent">#634f9e</color>
+    <color name="black">#3e3c3c</color>
+    <color name="white">#fff</color>
+    <color name="blue">#1e3789</color>
+    <color name="toolcolor">#634f9e</color>
+    <color name="orange">#bc7c3f</color>
+    <color name="tabblayout">#b4b9f2</color>
+    <color name="innertextview">#3c2a8f</color>
+    <color name="cardcolor">#88c3d1cf</color>
+</resources>

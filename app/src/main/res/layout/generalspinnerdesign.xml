@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_weight="1"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/catgrygenrlRGid"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="Sharma"
+        android:id="@+id/catgrygenrlRbtn1id"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="Verma"
+        android:id="@+id/catgrygenrlRbtn2id"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="Thakur"
+        android:id="@+id/catgrygenrlRbtn3id"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:id="@+id/confpass_containerid"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_gravity="top"
+        android:layout_margin="20dp"
+        android:src="@drawable/ggr" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20sp"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:text="Reset Password"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:layout_margin="10sp"
+    android:id="@+id/newpasswd"
+    android:textColorHint="@color/innertextview"
+    android:textColor="@color/innertextview"
+    android:textAlignment="center"
+    android:hint="Enter New Password"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_margin="10sp"
+        android:id="@+id/confirmpass"
+        android:textColor="@color/innertextview"
+        android:textColorHint="@color/innertextview"
+        android:textAlignment="center"
+        android:hint="Confirm Password"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnpasssaveid"
+        android:text="Save"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/roundbtndsgn"/>
+
+    </LinearLayout>

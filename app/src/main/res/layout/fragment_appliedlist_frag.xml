@@ -1,0 +1,36 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolcolor"
+            android:id="@+id/appliedlisttoolid"/>
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:background="@color/toolcolor"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            android:id="@+id/appliedlisttabid"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:id="@+id/appliedlistcontainerid">
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/appliedlistviewpagerid">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout> <!-- End of Container Layout !-->
+    </LinearLayout>
+</LinearLayout>

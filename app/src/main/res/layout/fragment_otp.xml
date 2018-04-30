@@ -1,0 +1,67 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/otp_containerid"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="202dp"
+        android:layout_gravity="top"
+        android:src="@drawable/ggr"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Please check your Inbox And Enter the OTP below. "/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="@color/innertextview"
+    android:id="@+id/edtotpid"
+    android:inputType="number"
+    android:textColorHint="@color/innertextview"
+    android:layout_margin="20sp"
+    android:hint="Enter Your OTP "/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="140dp"
+        android:id="@+id/forgetotp_submitid"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:background="@drawable/roundbtndsgn"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Didn't get OTP ?"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#eaaf6f"
+        android:text="Resend OTP"/>
+
+    </LinearLayout>
+    </ScrollView>

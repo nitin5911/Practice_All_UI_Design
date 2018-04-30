@@ -1,0 +1,37 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolcolor"
+            android:id="@+id/jobseekproftoolid"/>
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:background="@color/toolcolor"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            android:id="@+id/jobseekproftabid"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:id="@+id/jobseekprofcontainerid">
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/whitetheme"
+                android:id="@+id/jobseekprofviewpagerid">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout> <!-- End of Container Layout !-->
+    </LinearLayout>
+</LinearLayout>

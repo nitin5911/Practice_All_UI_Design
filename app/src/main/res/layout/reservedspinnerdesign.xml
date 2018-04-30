@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/catgryreserveRGid"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="OBC"
+        android:backgroundTint="@color/blue"
+        android:id="@+id/catgryreserveRbtn1id"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="SC"
+        android:layout_weight="0.33"
+        android:backgroundTint="@color/blue"
+        android:id="@+id/catgryreserveRbtn2id"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="ST"
+        android:backgroundTint="@color/blue"
+        android:layout_weight="0.33"
+        android:id="@+id/catgryreserveRbtn3id"
+        android:layout_height="wrap_content" />
+    </RadioGroup>
+
+</LinearLayout>

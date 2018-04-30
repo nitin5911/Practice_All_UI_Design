@@ -1,0 +1,250 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/jobseekcontaddmainlayoutid"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.90"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textCursorDrawable="@null"
+                    android:backgroundTint="@color/innertextview"
+                    android:textColor="@color/innertextview"
+                    android:id="@+id/jsupdatephoneid"
+                    android:hint="Mobile Number"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textCursorDrawable="@null"
+                    android:backgroundTint="@color/innertextview"
+                    android:textColor="@color/innertextview"
+                    android:id="@+id/jsupdateaddrsid"
+                    android:hint="Address"/>
+                </android.support.design.widget.TextInputLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/toolcolor"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/statetxtid"
+                        android:text="State :"
+                        android:textColor="@color/white" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jsupstatespinnerid"
+                        android:scrollbarSize="20dp"
+                        android:textAlignment="center"
+                        android:layout_toRightOf="@+id/statetxtid"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/white"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/toolcolor"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/districttxtid"
+                        android:text="District :"
+                        android:textColor="@color/white" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jsupdistrctspinnerid"
+                        android:scrollbarSize="20dp"
+                        android:textAlignment="center"
+                        android:layout_toRightOf="@+id/districttxtid"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/white"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+                </RelativeLayout>
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                android:layout_margin="2dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/jsupdatepincodeid"
+                    android:textCursorDrawable="@null"
+                    android:backgroundTint="@color/innertextview"
+                    android:textColor="@color/innertextview"
+                    android:hint="PIN Code"/>
+            </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/toolcolor"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seeking for :"
+                        android:id="@+id/jobreg2seekforjobid"
+                        android:layout_margin="5dp"
+                        android:background="@color/toolcolor"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skill Learning"
+                        android:buttonTint="@color/innertextview"
+                        android:id="@+id/jsupcheckboxskillid"
+                        android:textColor="@color/innertextview"
+                        android:textColorHint="@color/innertextview"
+                        android:textSize="20sp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/jsupskilllayoutid">
+                    </LinearLayout>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Foriegn Employment"
+                        android:id="@+id/jsupcheckboxforeempid"
+                        android:buttonTint="@color/innertextview"
+                        android:textColor="@color/innertextview"
+                        android:textColorHint="@color/innertextview"
+                        android:textSize="20sp"/>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pvt. Job"
+                        android:buttonTint="@color/innertextview"
+                        android:id="@+id/jsupcheckboxpvtjobid"
+                        android:textColor="@color/innertextview"
+                        android:textColorHint="@color/innertextview"
+                        android:textSize="20sp"/>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Foriegn Study"
+                        android:buttonTint="@color/innertextview"
+                        android:id="@+id/jsupcheckboxforestudyid"
+                        android:textColor="@color/innertextview"
+                        android:textColorHint="@color/innertextview"
+                        android:textSize="20sp"/>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Govt. Job"
+                        android:buttonTint="@color/innertextview"
+                        android:id="@+id/jsupcheckboxgovtjobid"
+                        android:textColor="@color/innertextview"
+                        android:textColorHint="@color/innertextview"
+                        android:textSize="20sp"/>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Self Employment"
+                        android:buttonTint="@color/innertextview"
+                        android:id="@+id/jsupcheckboxselfemplyid"
+                        android:textColor="@color/innertextview"
+                        android:textColorHint="@color/innertextview"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:background="@color/toolcolor"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/isemployedtxtid"
+                        android:textColor="@color/white"
+                        android:text=" Are you Employeed :"/>
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+                        android:id="@+id/jsupemployedspnrid"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/isemployedtxtid"
+                        android:textAlignment="center"
+                        />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/jsupemployeedlayoutid"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/jsupNoemployeeditemslayoutid"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbtndsgn"
+            android:text="Update details"
+            android:textSize="20sp"
+            android:id="@+id/jsupcontupbtnid"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

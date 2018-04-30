@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GGR</string>
+    <string name="closedrawer">close drawer</string>
+    <string name="opendrawer">open drawer</string>
+    <string name="forget">If you have forgot your Password, please enter your account email address below and click the button.</string>
+    <string name="username_preference">username</string>
+    <string name="outside_token">_KDHudbjadguaigwebbHAY3844</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="seeking_for">
+        <item>Skill Learning</item>
+        <item>Foriegn Employment</item>
+        <item>Pvt. Job</item>
+        <item>Foriegn Study</item>
+        <item>Govt. Job</item>
+        <item>Self Employment</item>
+
+    </string-array>
+    <string name="google_maps_key"> AIzaSyA3cZ0cOi1vwOt4fveODUc7osYxqSAjIyE </string>
+</resources>

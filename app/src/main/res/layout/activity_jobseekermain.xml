@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayoutmainid"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fulllayoutid"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:background="@color/toolcolor"
+            android:titleTextColor="#fff"
+            android:layout_width="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:layout_height="wrap_content"
+            android:id="@+id/jobseekermaintoolbarid">
+        </android.support.v7.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/jobseekmainreclid">
+            </android.support.v7.widget.RecyclerView>
+        </ScrollView>
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#fff"
+        class="com.example.reax.ggr.Navigation_detail.Nav_user_detail_frag"
+        android:layout="@layout/fragment_navigationmenu">
+    </fragment>
+</android.support.v4.widget.DrawerLayout>
